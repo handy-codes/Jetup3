@@ -2,6 +2,7 @@ body{
     background-color: bisque;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .images{
@@ -17,23 +18,28 @@ body{
 }
 
 header{
-    height: 80px;
-    background-color: blue;
-    color: white;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 999;
 }
 
 nav{
+    color: white;
     display: flex;
+    background-color: blue;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    height: 60px;
 }
 
 a{
     color: white;
     text-decoration: none;
     margin-right: 10px;
+    font-size: 15px;
 }
 
 main{
@@ -43,4 +49,16 @@ main{
 
 li{
     font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
